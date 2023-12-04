@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    max-width: 1367px;
+    /* max-width: 1079px; */
+    padding: 1.78vh 10vw;
+    /* padding: 16px 144px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 196px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+
+.logo .appName {
+    display: inline-block;
+    color: #FFF;
+
+    font-family: Sora;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logo .beta {
+    color: #232426;
+    border-radius: 4px;
+    background: #CCC;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    padding: 2px 6px;
+    align-items: flex-start;
+    gap: 10px;
+    height: fit-content;
+}
+
+.logoHeading {
+    display: flex;
+    gap: 10px;
+}
+
+.mainHeading {
+    display: flex;
+    gap: 14px;
+}
+
+.request {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userInfo img {
+    width: 44px;
+    height: 44px;
+}
+
+.overf {
+    overflow: hidden;
+}
+
+@media (max-width:657px) {
+    .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

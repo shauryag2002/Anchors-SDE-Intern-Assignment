@@ -1,0 +1,251 @@
+/* .Earning .earnWrapper {
+    display: inline-flex;
+    padding: 5.11vh 9.93vw 5.22vh 10.07vw;
+    justify-content: center;
+    align-items: center;
+} */
+
+.Earning .earnWrapper {
+    display: inline-flex;
+    /* padding: 46px 143px 47px 145px; */
+    padding: 5.11vh 0 5.22vh 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.Earning .mainHeading {
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 16px;
+    background: #1E1E1E;
+}
+
+.earnWrapper .subHeading {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.subHeading .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.yt_image_info {
+    display: flex;
+    width: 254px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.yt_image_info .top {
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 4px;
+    background: #707070;
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 4px;
+}
+
+.yt_image_info .star {
+    width: 24px;
+    height: 24px;
+}
+
+.yt_image_info .thumbnail {
+    width: 240px;
+    height: 135px;
+}
+
+.yt_image_info .Date {
+    color: rgba(255, 255, 255, 0.50);
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.yt_image_info_right {
+    display: flex;
+    width: 255px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.yt_image_info_right .name {
+    height: 50px;
+    align-self: stretch;
+    overflow: hidden;
+    color: #FFF;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.videoInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.vDetails {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vDetailsNo {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.vDetailsIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.right {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    background: #282828;
+}
+
+.yt_views_info {
+    display: flex;
+    width: 346px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.view_count {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.view_button {
+    display: inline-flex;
+    height: 48px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FF2020;
+    cursor: pointer;
+}
+
+.tableWrapper .heading {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+.Thead {
+    width: 1079px;
+    height: 81px;
+    flex-shrink: 0;
+    background: #1E1E1E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.table {
+    overflow: auto;
+}
+
+.Tbody {
+    background: rgba(30, 30, 30, 0.50);
+}
+
+.Tcontent {
+    color: #FFF;
+    flex: 1;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.thumbnailNum img {
+    width: 120px;
+    height: 67.5px;
+    flex-shrink: 0;
+}
+
+.titleNum {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width:1050px) {
+    .earnWrapper .subHeading {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:657px) {
+    .subHeading .left {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .videoInfo {
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .yt_views_info {
+        width: 200px;
+    }
+}

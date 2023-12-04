@@ -1,0 +1,122 @@
+.landMainHeading {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.landWrapper {
+    display: flex;
+    max-width: 713px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.landSubHeading {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 583px;
+    /* 150% */
+}
+
+.yt_link {
+    display: flex;
+    width: 713px;
+    align-items: center;
+    gap: 20px;
+}
+
+.yt_svg {
+    display: flex;
+    padding: 12px 39px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 10000px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.yt_svg input {
+    color: #373737;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #FFF;
+    background: none;
+}
+
+.yt_link .btn {
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    background: #FF2020;
+    cursor: pointer;
+}
+
+.video_image {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100000px;
+    background: rgba(255, 255, 255, 0.06);
+    bottom: -60px;
+    right: -40px;
+    z-index: -100;
+}
+
+.video_image img {
+    background: none;
+    z-index: -1;
+}
+
+@media (max-width:740px) {
+    .yt_link {
+        width: 90%;
+        margin: auto;
+    }
+
+    .landMainHeading {
+        font-size: 2.5rem;
+    }
+
+    .LandingPage {
+        margin: auto;
+    }
+
+    .landSubHeading {
+        font-size: 1.3rem;
+    }
+
+    .landing {
+        margin: auto;
+    }
+}
