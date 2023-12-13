@@ -11,7 +11,7 @@ const EarningPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('https://anchors-backend-git-main-shauryag2002.vercel.app/', {
+                const res = await axios.get(process.env.REACT_APP_URL, {
                     headers: {
                         'Access-Control-Allow-Origin': '*',
                         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',

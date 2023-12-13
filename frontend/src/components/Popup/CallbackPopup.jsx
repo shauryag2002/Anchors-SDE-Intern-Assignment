@@ -4,6 +4,7 @@ import tick from "../../images/tick.svg"
 import arrow from "../../images/arrow.svg"
 import { useNavigate } from 'react-router-dom'
 import emailjs from "@emailjs/browser";
+import AWS from 'aws-sdk';
 const CallbackPopup = ({ popup, setPopup }) => {
     const navigate = useNavigate()
     const popupWrapperRef = useRef(null);
@@ -30,10 +31,33 @@ const CallbackPopup = ({ popup, setPopup }) => {
     const handleClick = () => {
         if (name === '' || mobile === '') { }
         else {
-            emailjs.send("service_8ds3zbs", "template_2e4btfh", {
-                user_name: name,
-                user_phone: mobile,
-            });
+            const ses = new AWS.SES({ apiVersion: 'latest', region: process.env.REACT_APP_REGION, accessKeyId: process.env.REACT_APP_ACCESS_KEY, secretAccessKey: process.env.REACT_APP_SECRET_ACCESS_KEY });
+            const sendEmail = async () => {
+                const params = {
+                    Source: "guptashaurya2002@gmail.com",
+                    Destination: {
+                        ToAddresses: ["ravi@anchors.in"],
+                    },
+                    Message: {
+                        Subject: {
+                            Data: "New Callback Request",
+                        },
+                        Body: {
+                            Text: {
+                                Data: `Name: ${name} \n Mobile: ${mobile}\n \nBest Regards,\nShaurya Gupta`,
+                            },
+                        },
+                    },
+                };
+
+                try {
+                    await ses.sendEmail(params).promise();
+                    console.log('Email sent successfully!');
+                } catch (error) {
+                    console.error(error);
+                }
+            };
+            sendEmail();
             setPopupclick((prev) => !prev)
         }
     }

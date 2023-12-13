@@ -25,7 +25,7 @@ const LandingPage = () => {
 
         let earn = Math.min(subscribeCount, res.data.items[0].statistics.viewCount) + 10 * res.data.items[0].statistics.commentCount + 5 * res.data.items[0].statistics.likeCount;
         try {
-            const res1 = await axios.post("https://anchors-backend-git-main-shauryag2002.vercel.app/", {
+            const res1 = await axios.post(process.env.REACT_APP_URL, {
                 view: res.data.items[0].statistics.viewCount,
                 comment: res.data.items[0].statistics.commentCount,
                 like: res.data.items[0].statistics.likeCount,

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "aws-sdk": "^2.1517.0",
     "axios": "^1.6.2",
     "buffer": "^6.0.3",
     "react": "^18.2.0",
